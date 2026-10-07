@@ -21,4 +21,24 @@ first_name = input("Enter First Name: ")
 last_name = input("Enter Last Name: ")
 name = first_name + " " + last_name
 print(name)
-score = input("Score in Math: ")
+score = int(input("Score in Math: "))
+
+# CONDITION CHECK
+if score >= 0 and score <= 39:
+    grade = "F"
+    remark = "Fail"
+elif score > 39 and score <= 49:
+    grade = "D"
+    remark = "Pass"
+elif score > 49 and score <= 59:
+    grade = "C"
+    remark = "Credit"
+elif score > 59 and score <= 69:
+    grade = "B"
+    remark = "Good"
+elif score > 69 and score <= 100:
+    grade = "A"
+    remark = "Excellent"
+else:
+    grade = " "
+    remark = "Not a score"
