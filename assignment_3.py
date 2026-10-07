@@ -16,11 +16,10 @@ transport fare decision system
 """
 print("Grade Classifier")
 
-# User Information
+# Get User Information
 first_name = input("Enter First Name: ")
 last_name = input("Enter Last Name: ")
 name = first_name + " " + last_name
-print(name)
 score = int(input("Score in Math: "))
 
 # CONDITION CHECK
@@ -42,3 +41,16 @@ elif score > 69 and score <= 100:
 else:
     grade = " "
     remark = "Not a score"
+
+print(
+f"""
+************************
+{name} mathematics report
+************************
+First name: {first_name}
+Last name: {last_name}
+Score: {score}
+Grade: {grade}
+Renark: {remark}
+"""
+)
